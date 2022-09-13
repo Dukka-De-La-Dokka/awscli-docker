@@ -1,0 +1,11 @@
+# Which account's role do you want to take over?
+TARGET_ACCTID=""
+
+# The IAM role name in the target account
+ROLE_NAME="OrganizationAccountAccessRole"
+
+# Which session name do you want to use for this connection?
+SESSION_NAME="SwitchRoleToAnotherAccount"
+
+# Maximum allowed session time for this connection
+DURSEC="3600"
