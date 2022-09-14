@@ -27,7 +27,7 @@ source ~/workdir/switch-role.sh
 exit
 docker exec -it <created docker container name> bash
 ```
-9. If the session time is expired (default is set to 1 hour), please `exit` the container and re-enter the container, followed by the execution of "switch-role" shell script in order to re-issue credentials
+9. If the switching-roll session is expired (default is set to 1 hour), please `exit` the container and re-enter the container, followed by the execution of "switch-role" shell script in order to re-issue credentials
 
 ## Please
 * Do not delete `./.env` file after copied your credential keys, and keep this file secret! Do not upload or share to any public places.
