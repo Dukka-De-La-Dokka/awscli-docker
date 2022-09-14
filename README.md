@@ -2,7 +2,7 @@
 AWS management tool - AWS CLI - docker container version
 
 ## How to use
-1. Download the latest release of docker project, then unzip and rename the root folder's name to your favorite project name. I personally prefer the following:  
+1. Download the source of the latest commit or latest release of this repository, then unzip and rename the root folder's name to your favorite project name. I personally prefer the following:  
 `<AWS root account name>_<IAM user name>_CTNR`  
 For example, it goes like this!  
 `JamesAWS_main-user-01_CTNR`
@@ -22,11 +22,12 @@ docker exec -it <created docker container name> bash
 ```
 source ~/workdir/switch-role.sh
 ```
-8. When you want to switch back to the original IAM user, just exit your docker container and then:
+8. When you want to switch back to the original IAM user, just `exit` your docker container and re-enter the container:
 ```
-docker compose down
-docker compose up -d
+exit
+docker exec -it <created docker container name> bash
 ```
+9. If the session time is expired (default is set to 1 hour), please `exit` the container and re-enter the container, followed by the execution of "switch-role" shell script in order to re-issue credentials
 
 ## Please
 * Do not delete `./.env` file after copied your credential keys, and keep this file secret! Do not upload or share to any public places.
