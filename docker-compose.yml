@@ -6,8 +6,11 @@ services:
       dockerfile: Dockerfile
     volumes:
       - type: bind
-        source: ./aws-cli
+        source: ./aws-cli/workdir
         target: /home/aws-iam/workdir
+      - type: bind
+        source: ./aws-cli/.ssh
+        target: /home/aws-iam/.ssh
     user: aws-iam
     env_file:
       - ./.env

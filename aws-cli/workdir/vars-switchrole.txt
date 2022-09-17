@@ -5,7 +5,4 @@ TARGET_ACCTID=""
 ROLE_NAME="OrganizationAccountAccessRole"
 
 # Which session name do you want to use for this connection?
-SESSION_NAME="SwitchRoleToAnotherAccount"
-
-# Maximum allowed session time for this connection
-DURSEC="3600"
+SESSION_NAME="SwitchedFromManagementAccount"
