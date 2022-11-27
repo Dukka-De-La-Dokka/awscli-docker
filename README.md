@@ -70,7 +70,7 @@ mssh ubuntu@<instance-id>
 * If you want to use another UID & GID inside the docker container, in order to match your host's UID & GID, please change the Dockerfile's `ARG UID=1000` & `ARG GID=1000` to your desired number 
 
 ## Version
-* Current release : v2.0
+* Current release : v2.1
 * Dockerfile base image : `FROM python:3.9.14`
 
 ## For your local memo
